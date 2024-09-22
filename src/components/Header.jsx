@@ -6,7 +6,7 @@ export default function Header() {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
   return (
-    <div className="fixed w-full">
+    <div className="fixed z-50 w-full">
       <div className="relative px-[25px] flex justify-between items-center p-4 bg-[white]">
         <div>
           <img className="w-[90px] h-[30px]" src="/logo (1).png" alt="" />

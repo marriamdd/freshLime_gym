@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {
@@ -10,7 +9,35 @@
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
 }
+.step-img-box {
+  position: relative;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
 
-body {
-  font-family: "Rubik", sans-serif;
+.step-img-box::before {
+  content: "";
+  position: absolute;
+  width: 100%; /* Full width */
+  padding-bottom: 70%; /* Aspect ratio */
+  background-color: #e6f2ef;
+  z-index: -2;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position */
+  border-radius: 10px;
+}
+
+.step-img-box::after {
+  content: "";
+  position: absolute;
+  width: 80%; /* Adjust width */
+  padding-bottom: 60%; /* Aspect ratio */
+  background-color: #b5d9ce;
+  z-index: -1;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position */
+  border-radius: 10px;
 }
