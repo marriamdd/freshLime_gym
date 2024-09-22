@@ -14,13 +14,13 @@ export default function Header() {
         <div className="relative z-30 md:hidden">
           <MenuToggle toggle={toggleOpen} isOpen={isOpen} />
         </div>
-        <div className="hidden md:flex">
-          <ul className="flex gap-[20px] ">
-            <li>How it works</li>
-            <li>Inside us</li>
-            <li>Testimonials</li>
-            <li>Pricing</li>
-            <li className="bg-[#087f5b] rounded-[9px] text-[white] font-[500]">
+        <div className="hidden md:flex ">
+          <ul className="flex items-center gap-[20px] text-[#333] ">
+            <li className=" text-[18px]  font-[700]">How it works</li>
+            <li className=" text-[18px] font-[700]">Inside us</li>
+            <li className=" text-[18px] font-[700]">Testimonials</li>
+            <li className=" text-[18px] font-[700]">Pricing</li>
+            <li className="bg-[#087f5b] px-[24px] py-[12px] rounded-[9px] text-[white] font-[700]">
               Try for free
             </li>
           </ul>

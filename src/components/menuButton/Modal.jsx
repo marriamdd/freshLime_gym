@@ -18,12 +18,12 @@ export const Modal = ({ toggle }) => (
   >
     <div className="text-black" onClick={(e) => e.stopPropagation()}>
       {" "}
-      <ul>
+      <ul className="text-[24px] flex flex-col font-[700] gap-[20px] text-center ">
         <li>How it works</li>
         <li>Inside us</li>
         <li>Testimonials</li>
         <li>Pricing</li>
-        <li className="bg-[#087f5b] rounded-[9px] text-[white] font-[500]">
+        <li className="bg-[#087f5b] py-[9px] px-[19px] rounded-[9px] text-[white] font-[500]  ">
           Try for free
         </li>
       </ul>
