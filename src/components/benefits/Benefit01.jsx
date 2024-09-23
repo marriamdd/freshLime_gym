@@ -4,7 +4,7 @@ export default function Benefit01() {
   return (
     <div>
       <Benefit
-        order="2"
+        order={2}
         img="/meal.jpg"
         step={"01"}
         benefitTitle={"For all 7 days in week our diet plan"}

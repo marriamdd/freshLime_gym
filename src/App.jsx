@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import AllFeatured from "./components/ui/AllFeatured";
 import HowItWorks from "./components/HowItWorks";
+import InsideUs from "./components/insideUs/InsideUs";
 
 export default function App() {
   return (
@@ -11,6 +12,8 @@ export default function App() {
       <HeroSection />
       <AllFeatured />
       <HowItWorks />
+
+      <InsideUs />
     </div>
   );
 }

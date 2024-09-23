@@ -1,6 +1,6 @@
-import Benefit01 from "./Benefit01";
-import Benefit02 from "./Benefit02";
-import Benefit03 from "./Benefit03";
+import Benefit01 from "./benefits/Benefit01";
+import Benefit02 from "./benefits/Benefit02";
+import Benefit03 from "./benefits/Benefit03";
 
 export default function HowItWorks() {
   return (
@@ -19,7 +19,7 @@ export default function HowItWorks() {
           Our benefits and skills that make u happy
         </h1>
       </div>
-      <div className="flex flex-col  w-[80%]  ">
+      <div className="flex flex-col  w-[100%]  ">
         <Benefit01 />
         <Benefit02 />
         <Benefit03 />

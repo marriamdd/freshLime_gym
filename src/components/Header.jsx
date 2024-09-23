@@ -7,7 +7,10 @@ export default function Header() {
 
   return (
     <div className="fixed z-50 w-full">
-      <div className="relative px-[25px] flex justify-between items-center p-4 bg-[white]">
+      <div
+        style={{ background: "rgba(254, 254, 254, 0.97)" }}
+        className="relative px-[25px] flex justify-between items-center p-4 "
+      >
         <div>
           <img className="w-[90px] h-[30px]" src="/logo (1).png" alt="" />
         </div>

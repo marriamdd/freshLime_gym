@@ -4,7 +4,7 @@ export default function Benefit03() {
   return (
     <div>
       <Benefit
-        order="2"
+        order={2}
         img="/equipment.jpg"
         step={"03"}
         benefitTitle={"Gym equipment"}
