@@ -15,7 +15,10 @@ export default function InsideUs() {
   return (
     <div>
       {" "}
-      <div className="w-[100%] flex flex-col items-center justify-center mb-[30px]">
+      <div
+        id="InsideUS"
+        className="w-[100%] flex flex-col items-center justify-center mb-[30px]"
+      >
         <div className="flex flex-col w-[80%]  ">
           <p
             style={{ letterSpacing: "0.75px" }}
@@ -43,15 +46,22 @@ export default function InsideUs() {
             >
               Our equipment:
             </span>
-            {arr.map((item) => (
-              <span
-                className="text-[#555] text-nowrap flex-1 text-[14px] font-[400]"
-                key={item}
-              >
-                {item}
-              </span>
-            ))}
+            <div className="flex flex-col gap-[20px]">
+              {arr.map((item) => (
+                <span
+                  className="text-[#555] text-nowrap flex-1 text-[14px] font-[400]"
+                  key={item}
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
           </div>
+        </div>
+        <div>
+          <p className="mt-[60px]  text-[15px] border-b-[1.5px] transition-all duration-[0.3s] pb-[3px] easy-in-out hover:border-b-[transparent] border-b-[#087f5b] text-[#087f5b]">
+            Check our equipments →
+          </p>
         </div>
       </div>
     </div>

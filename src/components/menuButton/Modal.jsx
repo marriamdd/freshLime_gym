@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
-
+import { Link } from "react-scroll";
 const modalVariants = {
   open: { x: 0, opacity: 1 },
   closed: { x: "100%", opacity: 0 },
@@ -19,8 +19,26 @@ export const Modal = ({ toggle }) => (
     <div className="text-black" onClick={(e) => e.stopPropagation()}>
       {" "}
       <ul className="text-[24px] flex flex-col font-[700] gap-[20px] text-center ">
-        <li>How it works</li>
-        <li>Inside us</li>
+        <Link
+          to="Howitworks"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+          onClick={toggle}
+        >
+          How it works
+        </Link>
+        <Link
+          to="InsideUS"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+          onClick={toggle}
+        >
+          Inside us
+        </Link>
         <li>Testimonials</li>
         <li>Pricing</li>
         <li className="bg-[#087f5b] py-[9px] px-[19px] rounded-[9px] text-[white] font-[500]  ">

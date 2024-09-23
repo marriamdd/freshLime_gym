@@ -4,7 +4,11 @@ import Benefit03 from "./benefits/Benefit03";
 
 export default function HowItWorks() {
   return (
-    <div className="w-[100%] flex flex-col items-center justify-center mb-[30px]">
+    <div
+      id="Howitworks"
+      name="Howitworks"
+      className="w-[100%] flex flex-col items-center justify-center mb-[30px]"
+    >
       <div className="flex flex-col w-[80%]  ">
         <p
           style={{ letterSpacing: "0.75px" }}

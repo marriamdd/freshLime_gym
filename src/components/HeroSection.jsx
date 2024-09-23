@@ -3,7 +3,10 @@ import HeroAvatars from "./ui/HeroAvatars";
 
 export default function HeroSection() {
   return (
-    <div className="bg-[#e6f2ef] px-[25px] items-center md:items-center pb-[80px] flex flex-col md:gap-[70px] md:flex-row justify-center pt-[140px]  transition-all duration-[1s] ease-in-out">
+    <div
+      id="HeroSection"
+      className="bg-[#e6f2ef] px-[25px] items-center md:items-center pb-[80px] flex flex-col md:gap-[70px] md:flex-row justify-center pt-[140px]  transition-all duration-[1s] ease-in-out"
+    >
       <div className="items-center flex flex-col">
         <h1 className="text-[41px] leading-[1.05] md:w-[400px] md:text-start max-w-[670px] text-center mb-[24px] text-[#333] font-bold">
           Welcome to the one of the best Gym Freshlime
