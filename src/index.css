@@ -55,3 +55,26 @@
 .equipment-card:hover {
   transform: translateY(-10px);
 }
+
+.gymGridContainer {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  @media screen and (min-width: 550px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  @media screen and (min-width: 945px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: 1350px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.howWeWorkContainer {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 945px) {
+    flex-direction: row;
+  }
+}

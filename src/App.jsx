@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import AllFeatured from "./components/ui/AllFeatured";
 import HowItWorks from "./components/HowItWorks";
 import InsideUs from "./components/insideUs/InsideUs";
+import HowWeWork from "./components/howWeWork/HowWeWork";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <HowItWorks />
 
       <InsideUs />
+      <HowWeWork />
     </div>
   );
 }
