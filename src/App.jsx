@@ -6,6 +6,7 @@ import InsideUs from "./components/insideUs/InsideUs";
 import HowWeWork from "./components/howWeWork/HowWeWork";
 import Pricing from "./components/pricing/Pricing";
 import Features from "./components/features/Features";
+import FreeWeekFormComponent from "./components/FreeWeekFormComponent";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <HowWeWork />
       <Pricing />
       <Features />
+      <FreeWeekFormComponent />
     </div>
   );
 }

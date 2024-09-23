@@ -99,9 +99,16 @@ export default function Header() {
             >
               Pricing
             </Link>
-            <li className="bg-[#087f5b] cursor-pointer px-[24px] py-[12px] rounded-[9px] text-white font-[700]">
+            <Link
+              to="tryForFree"
+              spy={true}
+              smooth={true}
+              offset={-30}
+              duration={500}
+              className="bg-[#087f5b] cursor-pointer px-[24px] py-[12px] rounded-[9px] text-white font-[700]"
+            >
               Try for free
-            </li>
+            </Link>
           </ul>
         </div>
         {isOpen && <Modal toggle={toggleOpen} />}

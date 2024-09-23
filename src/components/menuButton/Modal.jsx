@@ -52,9 +52,16 @@ export const Modal = ({ toggle }) => (
         <Link to="Pricing" spy={true} smooth={true} offset={-30} duration={500}>
           Pricing
         </Link>
-        <li className="bg-[#087f5b] py-[9px] px-[19px] rounded-[9px] text-[white] font-[500]  ">
+        <Link
+          to="tryForFree"
+          spy={true}
+          smooth={true}
+          offset={-30}
+          duration={500}
+          className="bg-[#087f5b] py-[9px] px-[19px] rounded-[9px] text-[white] font-[500]  "
+        >
           Try for free
-        </li>
+        </Link>
       </ul>
     </div>
   </motion.div>
