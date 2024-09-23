@@ -70,11 +70,46 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
+.feedBacksGrid {
+  display: grid;
+  @media screen and (min-width: 550px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .howWeWorkContainer {
   display: flex;
   flex-direction: column;
   @media screen and (min-width: 945px) {
     flex-direction: row;
+  }
+}
+.pricing-plan--yearly::after {
+  content: "Best value";
+  position: absolute;
+  top: 20px;
+  right: -68px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+  background-color: #94d82d;
+  padding: 6px 80px;
+  transform: rotate(42deg);
+}
+.pricesCardsContainer {
+  justify-content: center;
+  @media screen and (min-width: 550px) {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+.FeatureCardContainer {
+  display: grid;
+  gap: 30px;
+  @media screen and (min-width: 550px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: 700px) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

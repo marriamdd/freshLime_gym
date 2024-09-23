@@ -39,8 +39,19 @@ export const Modal = ({ toggle }) => (
         >
           Inside us
         </Link>
-        <li>Testimonials</li>
-        <li>Pricing</li>
+        <Link
+          to="HowWeWork"
+          spy={true}
+          smooth={true}
+          offset={-20}
+          duration={500}
+          onClick={toggle}
+        >
+          Testimonials
+        </Link>
+        <Link to="Pricing" spy={true} smooth={true} offset={-30} duration={500}>
+          Pricing
+        </Link>
         <li className="bg-[#087f5b] py-[9px] px-[19px] rounded-[9px] text-[white] font-[500]  ">
           Try for free
         </li>

@@ -5,15 +5,15 @@ export default function HeroSection() {
   return (
     <div
       id="HeroSection"
-      className="bg-[#e6f2ef] px-[25px] items-center md:items-center pb-[80px] flex flex-col md:gap-[70px] md:flex-row justify-center pt-[140px]  transition-all duration-[1s] ease-in-out"
+      className="bg-[#e6f2ef] px-[25px] items-center md:items-center pb-[80px] flex flex-col md:gap-[70px] md:flex-row justify-center pt-[80px]  transition-all duration-[1s] ease-in-out"
     >
       <div className="items-center flex flex-col">
-        <h1 className="text-[41px] leading-[1.05] md:w-[400px] md:text-start max-w-[670px] text-center mb-[24px] text-[#333] font-bold">
+        <h1 className="text-[41px] md:text-[46px] lg:text-[52px] leading-[1.05] md:w-[400px] md:text-start max-w-[670px] text-center mb-[24px] text-[#333] font-bold">
           Welcome to the one of the best Gym Freshlime
         </h1>
         <p
-          className="text-[16px] md:w-[400px] md:text-start
-         max-w-[670px] text-center  text-[#555] font-[400]"
+          className="text-[16px] md:text-[18px] lg:text-[20px] md:w-[400px] md:text-start
+         max-w-[670px] text-center transition-all  text-[#555] font-[400]"
         >
           This is the cheapest, comfrtable, best price with world champion
           coatches and one of the best barthender for your protain shakes.

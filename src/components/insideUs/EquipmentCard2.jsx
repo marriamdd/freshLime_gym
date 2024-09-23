@@ -1,18 +1,21 @@
 import EquipmentCard from "./EquipmentCard";
-
+import { GiTrophyCup } from "react-icons/gi";
+import { GiWeightLiftingUp } from "react-icons/gi";
+import { MdOutlineRecordVoiceOver } from "react-icons/md";
 export default function EquipmentCard2() {
   const dataObj = [
     {
-      icon: "100KG plus",
+      span: "100KG",
+      title: " plus",
 
-      title: "High tempo cardio",
+      icon: <GiWeightLiftingUp color="#51cf66" />,
     },
     {
-      icon: "champion",
-      title: "Best view",
+      title: "champion",
+      icon: <GiTrophyCup color="#51cf66" />,
     },
     {
-      icon: "star-outline",
+      icon: <MdOutlineRecordVoiceOver color="#51cf66" />,
       title: "support",
     },
   ];

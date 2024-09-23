@@ -1,20 +1,19 @@
 import FeedbackCard from "../FeedbackCard";
 import GymZoomingImage from "../GymZoomingImage";
+import SectionIntro from "../SectionIntro";
 
 export default function HowWeWork() {
   return (
-    <div className="w-[100%] howWeWorkContainer md:pl-[130px] px-[30px] py-[80px] bg-[#e6f2ef]  gap-[80px] ">
+    <div
+      id="HowWeWork"
+      className="w-[100%] howWeWorkContainer lg:pl-[80px] px-[30px] py-[80px] bg-[#e6f2ef]  gap-[80px] "
+    >
       <div>
-        <span className="text-[#077252] text-[13px] font-[500]">
-          HOW WE WORK
-        </span>
-        <p
-          style={{ letterSpacing: "-0.5px" }}
-          className="text-[#333] text-[25px] text-start font-[700] mb-[80px]"
-        >
-          Our benefits and skills that make u happy
-        </p>
-        <div className="grid gap-[40px] grid-cols-1 md:grid-cols-2">
+        <SectionIntro
+          title=" HOW WE WORK"
+          description=" Our benefits and skills that make u happy"
+        />
+        <div className="feedBacksGrid  gap-[40px] ">
           <FeedbackCard
             img="/customer-1.jpg"
             text=" Hi there lola here, I never liked gym before. I am lazy hahahaha, but in

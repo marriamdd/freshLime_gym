@@ -13,14 +13,20 @@ export default function EquipmentCard({ dataObj, greenTiTle, title, img }) {
           <span className="bg-[#51cf66] font-[600] text-[10px] mb-[5px] py-[3.2px] px-[6.4px] rounded-full">
             {greenTiTle}
           </span>
+
           <span className="text-[#333] mb-[15px] font-[600] text-[16px]">
             {title}
           </span>
         </div>
 
         {dataObj?.map((item, index) => (
-          <div key={index} className="flex items-center mb-[10px]">
-            <ion-icon name={item.icon}></ion-icon>{" "}
+          <div key={index} className="flex gap-[10px] items-center mb-[10px]">
+            {item.icon}
+            {item.span && (
+              <span className="font-[600] text-[16.4px] text-[#555]">
+                {item.span}
+              </span>
+            )}
             <span className="text-[#555] text-[15px] font-[400]">
               {item.title}
             </span>

@@ -41,9 +41,19 @@ export default function Header() {
           isSticky ? "shadow-[0_1.2rem_3.6rem_rgba(0,0,0,0.1)]" : "bg-[#e6f2ef]"
         } flex justify-between items-center p-4`}
       >
-        <div>
-          <img className="w-[90px] h-[30px]" src="/logo (1).png" alt="" />
-        </div>
+        <Link
+          to="HeroSection"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+          <img
+            className="w-[90px] cursor-pointer h-[30px]"
+            src="/logo (1).png"
+            alt=""
+          />
+        </Link>
         <div className="relative z-30 md:hidden">
           <MenuToggle toggle={toggleOpen} isOpen={isOpen} />
         </div>
@@ -53,16 +63,43 @@ export default function Header() {
               to="Howitworks"
               spy={true}
               smooth={true}
-              offset={100}
+              offset={-100}
               duration={500}
               className="text-[18px] cursor-pointer font-[700]"
             >
               How it works
             </Link>
-            <li className="text-[18px] font-[700]">Inside us</li>
-            <li className="text-[18px] font-[700]">Testimonials</li>
-            <li className="text-[18px] font-[700]">Pricing</li>
-            <li className="bg-[#087f5b] px-[24px] py-[12px] rounded-[9px] text-white font-[700]">
+            <Link
+              to="InsideUS"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="text-[18px] cursor-pointer font-[700]"
+            >
+              Inside us
+            </Link>
+            <Link
+              to="HowWeWork"
+              spy={true}
+              smooth={true}
+              offset={-30}
+              duration={500}
+              className="text-[18px] cursor-pointer font-[700]"
+            >
+              Testimonials
+            </Link>
+            <Link
+              to="Pricing"
+              spy={true}
+              smooth={true}
+              offset={-30}
+              duration={500}
+              className="text-[18px] cursor-pointer font-[700]"
+            >
+              Pricing
+            </Link>
+            <li className="bg-[#087f5b] cursor-pointer px-[24px] py-[12px] rounded-[9px] text-white font-[700]">
               Try for free
             </li>
           </ul>

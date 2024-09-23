@@ -1,6 +1,7 @@
 import EquipmentCard1 from "./EquipmentCard1";
 import EquipmentCard2 from "./EquipmentCard2";
-
+import { IoMdDoneAll } from "react-icons/io";
+import { BiAddToQueue } from "react-icons/bi";
 export default function InsideUs() {
   const arr = [
     "CHEST PRESS MACHINE",
@@ -10,7 +11,7 @@ export default function InsideUs() {
     "INCLINE BENCH PRESS",
     "ADJUSTABLE BENCH",
     "OLYMPIC WEIGHT BENCH",
-    "GHD MACHINE",
+    // "GHD MACHINE",
   ];
   return (
     <div>
@@ -48,13 +49,20 @@ export default function InsideUs() {
             </span>
             <div className="flex flex-col gap-[20px]">
               {arr.map((item) => (
-                <span
-                  className="text-[#555] text-nowrap flex-1 text-[14px] font-[400]"
-                  key={item}
-                >
-                  {item}
-                </span>
+                <div className="flex items-center gap-[7px]" key={item}>
+                  <IoMdDoneAll color="#51cf66" className="w-[24px] h-[24px]" />
+                  <span className="text-[#555] text-nowrap flex-1 text-[14px] font-[400]">
+                    {item}
+                  </span>
+                </div>
               ))}
+
+              <div className="flex items-center gap-[7px]">
+                <BiAddToQueue color="#51cf66" className="w-[24px] h-[24px]" />
+                <span className="text-[#555] text-nowrap flex-1 text-[14px] font-[400]">
+                  GHD MACHINE
+                </span>
+              </div>
             </div>
           </div>
         </div>

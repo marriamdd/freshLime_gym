@@ -17,7 +17,7 @@ export default function Button({ text, bg, color, hoverBR, hoverBG }) {
       }}
     >
       <button
-        className={`w-full h-full text-[13px] rounded-[9px] focus:outline-none`}
+        className={`w-full h-full text-[13px] text-nowrap rounded-[9px] focus:outline-none`}
       >
         {text}
       </button>
