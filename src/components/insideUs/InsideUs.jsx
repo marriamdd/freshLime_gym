@@ -30,8 +30,8 @@ export default function InsideUs() {
             At our gym u will find everything u need
           </h1>
         </div>
-        <div className="flex flex-col md:flex-row gap-[50px] items-center justify-center  w-[80%]  ">
-          <div className=" EquipmentDiv  gap-[20px]  ">
+        <div className="flex flex-col md:flex-row gap-[80px] items-center justify-center  w-[80%]  ">
+          <div className=" EquipmentDiv  gap-[50px]  ">
             <EquipmentCard1 />
             <EquipmentCard2 />
           </div>

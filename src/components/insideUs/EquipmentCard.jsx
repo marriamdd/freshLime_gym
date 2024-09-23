@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
 export default function EquipmentCard({ dataObj, greenTiTle, title, img }) {
-  console.log(dataObj, dataObj);
   return (
     <div
       style={{ backgroundColor: "rgba(254, 254, 254, 0.97)" }}
-      className=" min-w-[190px] flex-1  h-[410px] transition-shadow duration-200 shadow-custom-hover"
+      className="equipment-card min-w-[190px] flex-1 h-[410px] transition-shadow duration-200 shadow-custom-hover"
     >
       <div>
         <img className="h-[216px] rounded-t-[10px]" src={img} alt="" />
