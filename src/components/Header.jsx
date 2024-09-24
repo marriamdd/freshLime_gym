@@ -111,7 +111,7 @@ export default function Header() {
             </Link>
           </ul>
         </div>
-        {isOpen && <Modal toggle={toggleOpen} />}
+        {isOpen && <Modal toggle={toggleOpen} isOpen={isOpen} />}
       </div>
     </div>
   );

@@ -3,7 +3,7 @@
 export default function Button({ text, bg, color, hoverBR, hoverBG }) {
   return (
     <div
-      className={`rounded-[9px]  md:px-[25px] md:py-[12px] px-[12px] py-[19px] transition-all duration-[1s] ease-in-out`}
+      className={`rounded-[9px]  border-[3px] border-[transparent]  md:px-[25px] md:py-[12px] px-[12px] py-[19px] transition-all duration-[1s] ease-in-out`}
       style={{
         background: bg,
         color: color,
@@ -14,6 +14,7 @@ export default function Button({ text, bg, color, hoverBR, hoverBG }) {
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.background = bg;
+        // e.currentTarget.style.border = "transparent";
       }}
     >
       <button
