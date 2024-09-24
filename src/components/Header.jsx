@@ -103,7 +103,7 @@ export default function Header() {
               to="tryForFree"
               spy={true}
               smooth={true}
-              offset={-30}
+              offset={-130}
               duration={500}
               className="bg-[#087f5b] cursor-pointer px-[24px] py-[12px] rounded-[9px] text-white font-[700]"
             >
