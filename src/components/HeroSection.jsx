@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import Button from "./ui/Button";
 import HeroAvatars from "./ui/HeroAvatars";
 
@@ -20,14 +21,30 @@ export default function HeroSection() {
         </p>
 
         <div className="flex gap-[20px] md:w-[400px]  my-[30px]">
-          <Button text="Get your month pass" bg="#087f5b" color="white" />
-          <Button
-            text="Learn more ↓"
-            bg="white"
-            color="black"
-            hoverBR="3px solid white"
-            hoverBG="#e6f2ef"
-          />
+          <Link
+            to="tryForFree"
+            spy={true}
+            smooth={true}
+            offset={-30}
+            duration={500}
+          >
+            <Button text="Get your month pass" bg="#087f5b" color="white" />
+          </Link>
+          <Link
+            to="Howitworks"
+            spy={true}
+            smooth={true}
+            offset={-200}
+            duration={500}
+          >
+            <Button
+              text="Learn more ↓"
+              bg="white"
+              color="black"
+              hoverBR="3px solid white"
+              hoverBG="#e6f2ef"
+            />
+          </Link>
         </div>
 
         <div className="flex  md:w-[400px] mb-[60px]  justify-between w-[320px] items-center">
