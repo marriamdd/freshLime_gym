@@ -27,9 +27,10 @@ export default function useSentEmail() {
       return false;
     }
 
-    const serviceId = "service_qy5dvr4";
-    const templateId = "template_xamgtd9";
-    const publicKey = "gn2bgFcKgS8wR3zCg";
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
     const templateParams = {
       from_name: emailData.name,
       from_email: emailData.email,

@@ -8,16 +8,16 @@ export default function FreeWeekFormComponent() {
   const [emailData, setEmailData] = useState({
     name: "",
     email: "",
-    message: "Please choose one option:",
+    message: "",
   });
 
   const options = [
+    "Please choose one option :",
     "Friends and Family",
     "YouTube Video",
     "Podcast",
     "Facebook ad",
     "Other",
-    "Please choose one option :",
   ];
 
   const handleSubmit = (e) => {
@@ -28,7 +28,7 @@ export default function FreeWeekFormComponent() {
       setEmailData({
         name: "",
         email: "",
-        message: "Please choose one option:",
+        message: "Please choose one option :",
       });
     }
   };
