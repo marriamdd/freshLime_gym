@@ -11,7 +11,7 @@ export default function SectionIntro({ title, description }) {
       </p>
       <h1
         style={{ letterSpacing: "-0.5px" }}
-        className="text-start text-[26px] md:text-nowrap lg:text-[48px] text-[#333] mb-[70px] font-[700]"
+        className="text-start text-[26px] md:text-nowrap lg:text-[30px]  text-[#333] mb-[70px] font-[700]"
       >
         {description}
       </h1>

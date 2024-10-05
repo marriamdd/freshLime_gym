@@ -29,7 +29,7 @@ export default function InsideUs() {
           </p>
           <h1
             style={{ letterSpacing: "-0.5px" }}
-            className="self-center text-center text-[26px] md:text-nowrap lg:text-[48px] text-[#333] mb-[70px] font-[700]"
+            className="self-center text-center text-[26px] md:text-nowrap lg:text-[30px] text-[#333] mb-[70px] font-[700]"
           >
             At our gym u will find everything u need
           </h1>
